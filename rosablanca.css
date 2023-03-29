@@ -1,0 +1,55 @@
+#loading-screen {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: black;
+	color: #90ee90;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	font-family: 'Source Code Pro', monospace;
+  }
+  
+  #loading-text {
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 10px;
+  }
+  
+  
+  #loading-dots {
+	animation: dots 1s steps(5, end) infinite;
+  }
+  
+  #progress-bar-container {
+	width: 450px;
+	height: 20px;
+	border: 1px solid #90ee90;
+	margin-bottom: 20px;
+  }
+  
+  #progress-bar {
+	height: 100%;
+	background-color: #90ee90;
+  }
+  
+  #percent {
+	font-size: 20px;
+  }
+  
+  #download-link {
+	display: none;
+	font-size: 19px;
+	color: #90ee90;
+	margin-top: 20px;
+  }
+  
+  @keyframes dots {
+	to {
+	  visibility: hidden;
+	}
+  }
+  
